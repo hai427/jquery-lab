@@ -26,3 +26,15 @@
     http://api.jquery.com/text/
 */
 
+$(function() {
+    'use strict';
+
+    var count = 0;
+
+    $("#click-me").click(function() {
+        count++;
+        console.log(count);
+        $("#clicked-count").text(count);
+    });
+
+});
